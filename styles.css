@@ -1,0 +1,435 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  font-family: inter;
+}
+
+.hero {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem 1rem 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.notes {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.notes p {
+  color: #3d3d3d;
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.notes h5 {
+  color: #183455;
+  font-size: 1rem;
+}
+
+/* DATE ELEMENT */
+
+.date-container {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.badge {
+  display: flex;
+  min-width: 44px;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid #ced0db;
+  background: #f5f5f7;
+}
+
+.badge p {
+  color: #474d6f;
+  font-family: Inter;
+  font-size: 0.65rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.badgeContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dateContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.dateContent p {
+  color: #616161;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.date-container h3 {
+  color: #183455;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* CONTENT */
+
+section {
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-subtext {
+  max-width: 100%;
+}
+
+.hero-subtext p {
+  font-size: 0.9rem;
+  margin: 0.5rem auto 1rem auto;
+  color: #3d3d3d;
+
+  max-width: 65%;
+  text-align: center;
+}
+
+.postwrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 4rem auto;
+  padding: 2rem;
+  border: 1px solid #bababa63;
+  border-radius: 0.75rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #183455;
+}
+.leftChevron {
+  width: 2rem;
+  min-width: 4rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  border: 1px solid rgb(220, 220, 220);
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: 15ms;
+}
+
+.rightChevron {
+  width: 2rem;
+  min-width: 4rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  border: 1px solid rgb(220, 220, 220);
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: 15ms;
+}
+
+input[class="reset"] {
+  background-color: white;
+  color: rgb(11, 78, 177);
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  min-width: 5rem;
+  transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: 15ms;
+}
+
+input[class="reset"]:hover {
+  background-color: rgb(239, 239, 239);
+  color: rgb(11, 78, 177);
+  padding: 0.5rem;
+  cursor: pointer;
+  min-width: 5rem;
+}
+.leftChevron:hover {
+  background-color: rgb(222, 222, 222);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(11, 78, 177);
+}
+.rightChevron:hover {
+  background-color: rgb(222, 222, 222);
+  color: rgb(60, 60, 60);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(11, 78, 177);
+}
+.rightChevron:active {
+  background-color: rgb(231, 231, 231);
+  color: rgb(60, 60, 60);
+  border: 1px solid rgb(238, 238, 238);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(5, 92, 221);
+}
+.leftChevron:active {
+  background-color: rgb(231, 231, 231);
+  color: rgb(60, 60, 60);
+  border: 1px solid rgb(238, 238, 238);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(5, 92, 221);
+}
+input[type="submit"]:active {
+  background-color: rgb(231, 231, 231);
+  color: rgb(60, 60, 60);
+  border: 1px solid rgb(238, 238, 238);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(5, 92, 221);
+}
+
+.gridParent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.rect1 {
+  width: 100%;
+  height: 100%;
+  background-color: #242424;
+  padding: 2rem;
+  border-radius: 16px;
+  transition: all 0.75s ease-in-out;
+  transition-delay: 25ms;
+}
+.rect2 {
+  width: 100%;
+  height: 100%;
+  background-color: #242424;
+  padding: 2rem;
+  border-radius: 16px;
+  transition: all 0.75s ease-in-out;
+  transition-delay: 25ms;
+}
+.row1 {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+
+@media (max-width: 540px) {
+  .hero h1 {
+    font-weight: 800;
+    font-size: 1.65rem;
+    color: rgb(44, 44, 44);
+  }
+  .date-container h3 {
+    color: #183455;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .row1 {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 0.5rem;
+  }
+  .hero-subtext p {
+    font-size: 0.8rem;
+    margin: 0.5rem auto 1rem auto;
+    color: rgb(77, 77, 77);
+    max-width: 100%;
+    text-align: left;
+  }
+  .hero {
+    width: 100%;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: start;
+  }
+  .form {
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+    justify-content: left;
+    /* flex-direction: row; */
+  }
+  #guessField {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid rgb(218, 218, 218);
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0.5rem;
+  }
+}
+
+/* Celsius to Farenheit */
+
+fieldset {
+  margin-top: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 0.3rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  align-content: center;
+  justify-content: space-between;
+}
+
+fieldset label {
+  font-size: 0.9rem;
+  color: rgb(75, 75, 75);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02rem;
+  font-weight: 600;
+}
+
+.labelDiv {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.5rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.actions p {
+  display: none;
+  padding: 0.25rem 0.25rem;
+  border: 1px solid #ffffff;
+  font-size: 0.8rem;
+  color: #1366bf;
+  letter-spacing: -0.5;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.actions p:hover {
+  background-color: rgb(251, 252, 253);
+  font-size: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #cbe4ff;
+  color: #1259a5;
+  letter-spacing: -0.5;
+}
+
+.inputAndSubmit {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.inputAndSubmit input {
+  color: #474d6f;
+  border: 1px solid rgb(223, 225, 231);
+  padding: 0.25rem;
+  border-radius: 6px;
+  background-color: #fbfbfb;
+  transition: all 0.15s ease-in-out;
+  transition-delay: 25ms;
+}
+.inputAndSubmit input:focus {
+  color: #323441;
+  border-color: 1px solid white;
+  padding: 0.25rem;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px #007bff;
+  outline: none;
+}
+.inputAndSubmit button {
+  cursor: pointer;
+  color: #41424b;
+  font-weight: 700;
+  border: 1px solid rgb(223, 225, 231);
+  padding: 0.25rem;
+  border-radius: 6px;
+  background-color: #f6f8fa;
+  transition: all 0.15s ease-in-out;
+  transition-delay: 25ms;
+}
+.inputAndSubmit button:hover {
+  cursor: pointer;
+  color: #2e334e;
+  font-weight: 700;
+  border: 1px solid rgb(195, 195, 195);
+  padding: 0.25rem;
+  border-radius: 8px;
+  background-color: #eef3ff;
+}
